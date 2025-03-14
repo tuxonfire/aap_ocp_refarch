@@ -2,7 +2,7 @@ apiVersion: grafana.integreatly.org/v1beta1
 kind: Grafana
 metadata:
   name: grafana-a
-  namespace: prometheus-operator
+  namespace: aap24-666
 spec:
   ingress:
     enabled: true
