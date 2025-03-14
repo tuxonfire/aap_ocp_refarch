@@ -6,6 +6,9 @@ metadata:
   name: aap-dashboard
   namespace: prometheus
 spec:
+  instanceSelector:
+    matchLabels:
+      dashboards: grafana-a
   json: |
     {
       "annotations": {
