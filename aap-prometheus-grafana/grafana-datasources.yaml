@@ -2,7 +2,7 @@ apiVersion: grafana.integreatly.org/v1beta1
 kind: GrafanaDataSource
 metadata:
   name: grafanadatasource-sample
-  namespace: prometheus-operator
+  namespace: aap24-666
 spec:
   datasources:
     - access: proxy
@@ -12,6 +12,6 @@ spec:
         timeInterval: 5s
       name: Prometheus
       type: prometheus
-      url: 'http://prometheus-operated:9090'
+      url: 'http://prometheus-service:9090'
       version: 1
   name: grafana-datasources.yaml
