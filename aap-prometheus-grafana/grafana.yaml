@@ -1,7 +1,7 @@
-apiVersion: grafana.integreatly.org/v1beta1.GrafanaDatasource
+apiVersion: grafana.integreatly.org/v1beta1
 kind: Grafana
 metadata:
-  name: grafana
+  name: grafana-a
   namespace: prometheus-operator
 spec:
   ingress:
