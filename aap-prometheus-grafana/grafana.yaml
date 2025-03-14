@@ -8,7 +8,7 @@ spec:
     enabled: true
   config:
     auth:
-      disable_signout_menu: true
+      disable_signout_menu: 'true'
     auth.anonymous:
       enabled: true
     log:
