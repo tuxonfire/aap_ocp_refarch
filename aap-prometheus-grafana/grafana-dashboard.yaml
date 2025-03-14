@@ -4,7 +4,7 @@ metadata:
   labels:
     app: grafana
   name: aap-dashboard
-  namespace: prometheus-operator
+  namespace: prometheus
 spec:
   json: |
     {
