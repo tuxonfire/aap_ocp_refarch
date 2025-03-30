@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: grafana
-  namespace: {{ ansible_namespace }}
+  namespace: {{ grafana_namespace }}
   labels:
     operated-prometheus: 'true'
 spec:
