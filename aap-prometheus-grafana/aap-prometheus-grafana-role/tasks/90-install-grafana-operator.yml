@@ -7,7 +7,7 @@
 - name: Wait for Grafana Operator to deploy
   kubernetes.core.k8s_info:
     kind: Deployment
-    namespace: "{{ prometheus_namespace }}"
+    namespace: "{{ grafana_namespace }}"
     name: grafana-operator-controller-manager
     wait: yes
     wait_condition:
