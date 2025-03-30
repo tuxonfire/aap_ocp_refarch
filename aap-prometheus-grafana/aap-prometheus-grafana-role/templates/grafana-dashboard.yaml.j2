@@ -1,4 +1,4 @@
-apiVersion: integreatly.org/v1alpha1
+apiVersion: grafana.integreatly.org/v1beta1
 kind: GrafanaDashboard
 metadata:
   labels:
@@ -6,6 +6,9 @@ metadata:
   name: aap-dashboard
   namespace: {{ prometheus_namespace }}
 spec:
+  instanceSelector:
+    matchLabels:
+      dashboards: grafana-a
   json: |
     {
       "annotations": {
