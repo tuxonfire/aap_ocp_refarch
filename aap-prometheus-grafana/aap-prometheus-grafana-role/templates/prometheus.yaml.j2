@@ -1,7 +1,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: Prometheus
 metadata:
-  name: prometheus
+  name: {{ prometheus_name }}
   labels:
     prometheus: k8s
   namespace: {{ prometheus_namespace }}
